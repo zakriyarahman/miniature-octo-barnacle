@@ -3,6 +3,10 @@ verify:
 	nvidia-smi --query-gpu=compute_cap --format=csv
 	# shows cuda version (recommended 11.0)
 	nvcc --version
+
+build:
+	cargo build
+
 rust-version:
 	@echo "Rust command-line utility versions:"
 	rustc --version 			#rust compiler
